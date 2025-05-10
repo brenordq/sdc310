@@ -6,9 +6,9 @@
 
 <body>
     <form method='POST'>
-        <h3>Enter your name: <input type="text" name="name"</h3>
-        <h3>Enter your address: <input type="text" name="address"</h3>
-        <h3>Enter your phone number: <input type="text" name="num"</h3>
+        <h3>Enter your name: <input type="text" name="fname"</h3>
+        <h3>Enter your address: <input type="text" name="addy"</h3>
+        <h3>Enter your phone number: <input type="text" name="pnum"</h3>
         <input type="submit" value="Submit Values">
     </form>
     <?php
@@ -19,12 +19,12 @@
 
         //retrieve values from query string and store in local variable 
         //as long as the query string exists
-        if (isset($_POST['name']))
-            $full_name = $_POST['name'];
-        if (isset($_POST['address']))
-            $address = $_POST['address'];
-        if (isset($_POST['num']))
-            $phone = $_POST['num'];
+        if (isset($_POST['fname']))
+            $full_name = $_POST['fname'];
+        if (isset($_POST['addy']))
+            $address = $_POST['addy'];
+        if (isset($_POST['pnum']))
+            $phone = $_POST['pnum'];
 
         //display values entered as long as a value is there
         if (strlen($full_name) > 0)
